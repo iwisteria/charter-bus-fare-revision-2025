@@ -2263,7 +2263,7 @@
                         <span class="text-red-500">*</span> は必須項目、その他は任意項目です
                     </p>
 
-                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="space-y-6" id="contact-form">
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6" id="contact-form">
                         <input type="hidden" name="form-name" value="contact" />
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -2353,8 +2353,8 @@
                                       placeholder="具体的なご相談内容をお書きください。現在の状況や困っていることなど、詳しくお聞かせください。"></textarea>
                         </div>
 
-                        <!-- reCAPTCHA -->
-                        <div data-netlify-recaptcha="true" class="flex justify-center"></div>
+                        <!-- reCAPTCHA は一時的に無効化 -->
+                        <!-- <div data-netlify-recaptcha="true" class="flex justify-center"></div> -->
 
                         <div class="text-center">
                             <button type="submit"
@@ -2825,7 +2825,7 @@
                     return;
                 }
 
-                // 送信中UI
+                // エラーがない場合は、送信中UIを表示（但し、フォームは通常通り送信される）
                 submitButton.disabled = true;
                 submitButton.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 inline mr-2 animate-spin"></i>送信中...';
 
@@ -2833,6 +2833,9 @@
                 if (typeof lucide !== 'undefined') {
                     lucide.createIcons();
                 }
+
+                // Netlifyフォームの場合、フォームは通常のHTTP POSTで送信される
+                // preventDefault()を呼んでいないので、ここで通常のフォーム送信が継続される
             });
 
             // 送信完了後の処理（Netlifyフォームの場合、成功ページにリダイレクトされるため通常は不要）
