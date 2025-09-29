@@ -696,7 +696,7 @@
                     </div>
 
                     <!-- 隠れている運輸局テーブル -->
-                    <div id="other-regions" class="hidden grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
+                    <div id="other-regions" class="hidden grid lg:grid-cols-2 gap-8">
                         <!-- 北海道運輸局 -->
                         <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
                             <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white p-6">
@@ -1078,7 +1078,7 @@
                         </div>
 
                         <!-- 中国運輸局 -->
-                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
                             <div class="bg-gradient-to-r from-red-500 to-red-600 text-white p-6">
                                 <h3 class="text-2xl font-bold flex items-center">
                                     <i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>
@@ -1136,47 +1136,51 @@
                                     </table>
                                 </div>
 
-                            <!-- 交替運転者配置料金 新旧対照表 -->
-                            <div class="mt-6 px-6 pb-6">
-                                <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
-                                <div class="overflow-x-auto">
-                                    <table class="w-full text-sm">
-                                        <thead>
-                                            <tr class="border-b">
-                                                <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-200">
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
-                                                <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">2,250円</td>
-                                                <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,460円</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- 交替運転者配置料金 新旧対照表 -->
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm">
+                                            <thead>
+                                                <tr class="border-b">
+                                                    <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
+                                                    <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">2,250円</td>
+                                                    <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,460円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- 変更なし料金の記載 -->
-                            <div class="mt-4 p-4 bg-blue-50 rounded-lg">
-                                <p class="text-sm text-blue-800">
-                                    <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
-                                    <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
-                                </p>
+                                <!-- 変更なし料金の記載 -->
+                                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                                    <p class="text-sm text-blue-800">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
+                                        <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- 四国運輸局 -->
-                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
                             <div class="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-6">
-                                <h3 class="text-2xl font-bold flex items-center"><i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>四国運輸局</h3>
+                                <h3 class="text-2xl font-bold flex items-center">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>
+                                    四国運輸局
+                                </h3>
                             </div>
                             <div class="p-6">
                                 <div class="text-right text-sm text-gray-500 mb-4">距離：1kmあたり単価 / 時間：1時間あたり単価</div>
@@ -1228,50 +1232,52 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
 
-                            <!-- 交替運転者配置料金 新旧対照表 -->
-                            <div class="mt-6 px-6 pb-6">
-                                <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
-                                <div class="overflow-x-auto">
-                                    <table class="w-full text-sm">
-                                        <thead>
-                                            <tr class="border-b">
-                                                <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-200">
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
-                                                <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">2,210円</td>
-                                                <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,420円</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- 交替運転者配置料金 新旧対照表 -->
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm">
+                                            <thead>
+                                                <tr class="border-b">
+                                                    <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
+                                                    <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">2,210円</td>
+                                                    <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,420円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 変更なし料金の記載 -->
+                                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                                    <p class="text-sm text-blue-800">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
+                                        <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
+                                    </p>
                                 </div>
                             </div>
-
-                            <!-- 変更なし料金の記載 -->
-                            <div class="mx-6 mb-6 p-4 bg-blue-50 rounded-lg">
-                                <p class="text-sm text-blue-800">
-                                    <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
-                                    <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
-                                </p>
-                            </div>
-
                         </div>
 
                         <!-- 九州運輸局 -->
-                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
                             <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 text-white p-6">
-                                <h3 class="text-2xl font-bold flex items-center"><i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>九州運輸局</h3>
+                                <h3 class="text-2xl font-bold flex items-center">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>
+                                    九州運輸局
+                                </h3>
                             </div>
                             <div class="p-6">
                                 <div class="text-right text-sm text-gray-500 mb-4">距離：1kmあたり単価 / 時間：1時間あたり単価</div>
@@ -1323,50 +1329,52 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
 
-                            <!-- 交替運転者配置料金 新旧対照表 -->
-                            <div class="mt-6 px-6 pb-6">
-                                <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
-                                <div class="overflow-x-auto">
-                                    <table class="w-full text-sm">
-                                        <thead>
-                                            <tr class="border-b">
-                                                <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-200">
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">10円</td>
-                                                <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">10円</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">2,220円</td>
-                                                <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,430円</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- 交替運転者配置料金 新旧対照表 -->
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm">
+                                            <thead>
+                                                <tr class="border-b">
+                                                    <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">10円</td>
+                                                    <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">10円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">2,220円</td>
+                                                    <td class="py-3 px-2 text-center bg-red-50 font-semibold text-red-600">2,430円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 変更なし料金の記載 -->
+                                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                                    <p class="text-sm text-blue-800">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
+                                        <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
+                                    </p>
                                 </div>
                             </div>
-
-                            <!-- 変更なし料金の記載 -->
-                            <div class="mx-6 mb-6 p-4 bg-blue-50 rounded-lg">
-                                <p class="text-sm text-blue-800">
-                                    <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
-                                    <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
-                                </p>
-                            </div>
-
                         </div>
 
                         <!-- 沖縄総合事務局 -->
-                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up" data-aos-delay="700">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden" data-aos="fade-up">
                             <div class="bg-gradient-to-r from-pink-500 to-pink-600 text-white p-6">
-                                <h3 class="text-2xl font-bold flex items-center"><i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>沖縄総合事務局</h3>
+                                <h3 class="text-2xl font-bold flex items-center">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3"></i>
+                                    沖縄総合事務局
+                                </h3>
                             </div>
                             <div class="p-6">
                                 <div class="text-right text-sm text-gray-500 mb-4">距離：1kmあたり単価 / 時間：1時間あたり単価</div>
@@ -1418,48 +1426,46 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
 
-                            <!-- 交替運転者配置料金 新旧対照表 -->
-                            <div class="mt-6 px-6 pb-6">
-                                <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
-                                <div class="overflow-x-auto">
-                                    <table class="w-full text-sm">
-                                        <thead>
-                                            <tr class="border-b">
-                                                <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
-                                                <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-200">
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
-                                                <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
-                                                <td class="py-3 px-2 text-center bg-yellow-50">2,660円</td>
-                                                <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">2,660円</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- 交替運転者配置料金 新旧対照表 -->
+                                <div class="mt-6">
+                                    <h4 class="text-lg font-semibold text-gray-800 mb-3">交替運転者配置料金</h4>
+                                    <div class="overflow-x-auto">
+                                        <table class="w-full text-sm">
+                                            <thead>
+                                                <tr class="border-b">
+                                                    <th class="text-left py-3 px-2 font-semibold text-gray-700">料金区分</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-gray-700">旧料金</th>
+                                                    <th class="text-center py-3 px-2 font-semibold text-red-600">新料金</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>キロ制料金</strong>（1km当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">30円</td>
+                                                    <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">30円</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-3 px-2 font-medium bg-gray-50"><strong>時間制料金</strong>（1時間当たり）</td>
+                                                    <td class="py-3 px-2 text-center bg-yellow-50">2,660円</td>
+                                                    <td class="py-3 px-2 text-center bg-green-50 font-semibold text-green-600">2,660円</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 変更なし料金の記載 -->
+                                <div class="mt-4 p-4 bg-blue-50 rounded-lg">
+                                    <p class="text-sm text-blue-800">
+                                        <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
+                                        <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
+                                    </p>
                                 </div>
                             </div>
-
-                            <!-- 変更なし料金の記載 -->
-                            <div class="mx-6 mb-6 p-4 bg-blue-50 rounded-lg">
-                                <p class="text-sm text-blue-800">
-                                    <i data-lucide="info" class="w-4 h-4 inline mr-2"></i>
-                                    <strong>深夜早朝運行料金、特殊車両割増料金については、変更なし</strong>
-                                </p>
-                            </div>
-
                         </div>
-                    </div>
                 </div>
-                </div>
+
 
                 <!-- 注意事項 -->
                 <div class="mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6" data-aos="fade-up" data-aos-delay="400">
