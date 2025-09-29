@@ -2332,8 +2332,9 @@
                             </p>
                         </div>
 
-                        <!-- お問い合わせボタン -->
-                        <div class="space-y-4">
+                        <!-- お問い合わせフォーム -->
+                        <div class="space-y-6">
+                            <!-- 専門家へのリンク -->
                             <a href="https://busguardian.tokyo"
                                target="_blank"
                                rel="noopener noreferrer"
@@ -2353,19 +2354,121 @@
                                 </div>
                             </a>
 
-                            <a href="https://busguardian.tokyo/contact/"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="block bg-slate-700 bg-opacity-40 border border-slate-500 hover:border-amber-400 rounded-lg p-4 text-center backdrop-blur-sm transition-all duration-300 hover:bg-opacity-60 hover:shadow-lg group">
-                                <div class="flex items-center justify-center mb-2">
-                                    <i data-lucide="mail" class="w-5 h-5 text-amber-300 mr-2 group-hover:text-amber-200 transition-colors"></i>
-                                    <span class="text-amber-100 font-semibold group-hover:text-amber-50 transition-colors">お問い合わせフォーム</span>
-                                </div>
-                                <p class="text-sm text-slate-300 group-hover:text-slate-200 transition-colors">
-                                    詳しいご相談はこちらのフォームからどうぞ
-                                    <i data-lucide="external-link" class="w-3 h-3 inline ml-1 group-hover:text-amber-300 transition-colors"></i>
+                            <!-- お問い合わせフォーム -->
+                            <div class="bg-slate-700 bg-opacity-40 border border-slate-500 rounded-lg p-6 backdrop-blur-sm">
+                                <h4 class="text-amber-100 font-semibold text-lg mb-4 flex items-center">
+                                    <i data-lucide="mail" class="w-5 h-5 text-amber-300 mr-2"></i>
+                                    お問い合わせフォーム
+                                </h4>
+
+                                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="space-y-4" id="contact-form">
+                                    <input type="hidden" name="form-name" value="contact" />
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="name" class="block text-sm font-medium text-blue-100 mb-1">
+                                                会社名・お名前 <span class="text-red-400">*</span>
+                                            </label>
+                                            <input type="text"
+                                                   id="name"
+                                                   name="name"
+                                                   required
+                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+                                                   placeholder="例：〇〇運輸株式会社 / 田中太郎">
+                                        </div>
+                                        <div>
+                                            <label for="email" class="block text-sm font-medium text-blue-100 mb-1">
+                                                メールアドレス <span class="text-red-400">*</span>
+                                            </label>
+                                            <input type="email"
+                                                   id="email"
+                                                   name="email"
+                                                   required
+                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+                                                   placeholder="example@company.co.jp">
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label for="phone" class="block text-sm font-medium text-blue-100 mb-1">
+                                                電話番号
+                                            </label>
+                                            <input type="tel"
+                                                   id="phone"
+                                                   name="phone"
+                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
+                                                   placeholder="03-1234-5678">
+                                        </div>
+                                        <div>
+                                            <label for="region" class="block text-sm font-medium text-blue-100 mb-1">
+                                                管轄運輸局
+                                            </label>
+                                            <select id="region"
+                                                    name="region"
+                                                    class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
+                                                <option value="">選択してください</option>
+                                                <option value="関東運輸局">関東運輸局</option>
+                                                <option value="近畿運輸局">近畿運輸局</option>
+                                                <option value="北海道運輸局">北海道運輸局</option>
+                                                <option value="東北運輸局">東北運輸局</option>
+                                                <option value="北陸信越運輸局">北陸信越運輸局</option>
+                                                <option value="中部運輸局">中部運輸局</option>
+                                                <option value="中国運輸局">中国運輸局</option>
+                                                <option value="四国運輸局">四国運輸局</option>
+                                                <option value="九州運輸局">九州運輸局</option>
+                                                <option value="沖縄総合事務局">沖縄総合事務局</option>
+                                                <option value="その他">その他</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label for="subject" class="block text-sm font-medium text-blue-100 mb-1">
+                                            件名 <span class="text-red-400">*</span>
+                                        </label>
+                                        <select id="subject"
+                                                name="subject"
+                                                required
+                                                class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
+                                            <option value="">お問い合わせ内容を選択してください</option>
+                                            <option value="新運賃制度について">新運賃制度について</option>
+                                            <option value="届出手続きについて">届出手続きについて</option>
+                                            <option value="車種区分変更について">車種区分変更について</option>
+                                            <option value="運転者処遇改善について">運転者処遇改善について</option>
+                                            <option value="運行管理体制について">運行管理体制について</option>
+                                            <option value="許可申請について">許可申請について</option>
+                                            <option value="その他">その他</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="message" class="block text-sm font-medium text-blue-100 mb-1">
+                                            お問い合わせ内容 <span class="text-red-400">*</span>
+                                        </label>
+                                        <textarea id="message"
+                                                  name="message"
+                                                  rows="4"
+                                                  required
+                                                  class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent resize-y"
+                                                  placeholder="具体的なご相談内容をお書きください。現在の状況や困っていることなど、詳しくお聞かせください。"></textarea>
+                                    </div>
+
+                                    <!-- reCAPTCHA -->
+                                    <div data-netlify-recaptcha="true"></div>
+
+                                    <button type="submit"
+                                            class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                                        <i data-lucide="send" class="w-4 h-4 inline mr-2"></i>
+                                        お問い合わせを送信
+                                    </button>
+                                </form>
+
+                                <p class="text-xs text-slate-300 mt-4">
+                                    <i data-lucide="shield-check" class="w-3 h-3 inline mr-1"></i>
+                                    お預かりした個人情報は適切に管理し、お問い合わせの回答以外の目的には使用いたしません。
                                 </p>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
@@ -2569,6 +2672,180 @@
             // FAQ を元の状態に戻す
             document.querySelectorAll('.faq-content').forEach(content => {
                 content.classList.add('hidden');
+            });
+        });
+
+        // お問い合わせフォームの機能
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const messageInput = document.getElementById('message');
+
+            // リアルタイムバリデーション
+            function validateEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            function validatePhone(phone) {
+                if (!phone) return true; // 任意項目なのでemptyはOK
+                const phoneRegex = /^[\d\-\(\)\+\s]+$/;
+                return phoneRegex.test(phone);
+            }
+
+            function showError(input, message) {
+                // 既存のエラーメッセージを削除
+                const existingError = input.parentNode.querySelector('.error-message');
+                if (existingError) {
+                    existingError.remove();
+                }
+
+                // エラースタイル適用
+                input.classList.add('border-red-400', 'focus:ring-red-400');
+                input.classList.remove('border-slate-400', 'focus:ring-amber-400');
+
+                // エラーメッセージ表示
+                if (message) {
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'error-message text-red-400 text-xs mt-1';
+                    errorDiv.textContent = message;
+                    input.parentNode.appendChild(errorDiv);
+                }
+            }
+
+            function clearError(input) {
+                // エラーメッセージを削除
+                const existingError = input.parentNode.querySelector('.error-message');
+                if (existingError) {
+                    existingError.remove();
+                }
+
+                // 通常のスタイルに戻す
+                input.classList.remove('border-red-400', 'focus:ring-red-400');
+                input.classList.add('border-slate-400', 'focus:ring-amber-400');
+            }
+
+            // メールアドレスのバリデーション
+            emailInput.addEventListener('blur', function() {
+                if (this.value && !validateEmail(this.value)) {
+                    showError(this, '正しいメールアドレスを入力してください');
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // 電話番号のバリデーション
+            phoneInput.addEventListener('blur', function() {
+                if (!validatePhone(this.value)) {
+                    showError(this, '正しい電話番号を入力してください（数字、ハイフン、括弧、プラス記号、スペースのみ）');
+                } else {
+                    clearError(this);
+                }
+            });
+
+            // 文字数カウンター（メッセージ）
+            function updateMessageCounter() {
+                const maxLength = 1000;
+                const currentLength = messageInput.value.length;
+
+                let counter = messageInput.parentNode.querySelector('.char-counter');
+                if (!counter) {
+                    counter = document.createElement('div');
+                    counter.className = 'char-counter text-xs text-slate-400 mt-1 text-right';
+                    messageInput.parentNode.appendChild(counter);
+                }
+
+                counter.textContent = `${currentLength}/${maxLength}文字`;
+
+                if (currentLength > maxLength * 0.9) {
+                    counter.classList.add('text-amber-400');
+                    counter.classList.remove('text-slate-400');
+                } else {
+                    counter.classList.add('text-slate-400');
+                    counter.classList.remove('text-amber-400');
+                }
+
+                if (currentLength > maxLength) {
+                    counter.classList.add('text-red-400');
+                    counter.classList.remove('text-amber-400', 'text-slate-400');
+                }
+            }
+
+            messageInput.setAttribute('maxlength', '1000');
+            messageInput.addEventListener('input', updateMessageCounter);
+            updateMessageCounter(); // 初期表示
+
+            // フォーム送信時の処理
+            contactForm.addEventListener('submit', function(e) {
+                let hasError = false;
+
+                // 必須項目チェック
+                if (!nameInput.value.trim()) {
+                    showError(nameInput, 'お名前または会社名は必須です');
+                    hasError = true;
+                } else {
+                    clearError(nameInput);
+                }
+
+                if (!emailInput.value.trim()) {
+                    showError(emailInput, 'メールアドレスは必須です');
+                    hasError = true;
+                } else if (!validateEmail(emailInput.value)) {
+                    showError(emailInput, '正しいメールアドレスを入力してください');
+                    hasError = true;
+                } else {
+                    clearError(emailInput);
+                }
+
+                if (!messageInput.value.trim()) {
+                    showError(messageInput, 'お問い合わせ内容は必須です');
+                    hasError = true;
+                } else {
+                    clearError(messageInput);
+                }
+
+                // 電話番号チェック（任意だが、入力されている場合はバリデーション）
+                if (phoneInput.value && !validatePhone(phoneInput.value)) {
+                    showError(phoneInput, '正しい電話番号を入力してください');
+                    hasError = true;
+                } else {
+                    clearError(phoneInput);
+                }
+
+                // エラーがある場合は送信を阻止
+                if (hasError) {
+                    e.preventDefault();
+
+                    // 最初のエラー項目にスクロール
+                    const firstError = contactForm.querySelector('.border-red-400');
+                    if (firstError) {
+                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        firstError.focus();
+                    }
+                    return;
+                }
+
+                // 送信中UI
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 inline mr-2 animate-spin"></i>送信中...';
+
+                // アイコンを再初期化
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
+            });
+
+            // 送信完了後の処理（Netlifyフォームの場合、成功ページにリダイレクトされるため通常は不要）
+            // ただし、AJAX送信を使用する場合は以下のような処理を追加できます
+
+            // フォームのアクセシビリティ改善
+            contactForm.querySelectorAll('input, select, textarea').forEach(field => {
+                field.addEventListener('focus', function() {
+                    clearError(this);
+                });
             });
         });
 
