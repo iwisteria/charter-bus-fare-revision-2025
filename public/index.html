@@ -114,15 +114,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- ロゴ・タイトル -->
-                <div class="flex items-center">
+                <a href="https://busguardian.tokyo"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex items-center group hover:opacity-80 transition-opacity duration-300">
                     <img src="assets/images/new_gothic_white_logomark.png"
                          alt="BUS GUARDIAN TOKYO ロゴ"
-                         class="h-10 mr-3 drop-shadow-md">
+                         class="h-10 mr-3 drop-shadow-md group-hover:drop-shadow-lg transition-all duration-300">
                     <div class="flex flex-col">
                         <span class="text-sm font-bold leading-tight nav-logo-text transition-colors duration-300">BUS GUARDIAN TOKYO</span>
                         <span class="text-xs font-semibold leading-tight nav-logo-subtitle transition-colors duration-300">貸切バス料金改定</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- ナビゲーションリンク（デスクトップ） -->
                 <div class="hidden md:flex space-x-6">
@@ -2199,44 +2202,177 @@
 
 
         <!-- まとめセクション -->
-        <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <section class="py-16 bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
                 <div class="mb-8">
-                    <i data-lucide="target" class="w-16 h-16 mx-auto mb-6 text-yellow-400"></i>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">🎯 まとめ</h2>
+                    <i data-lucide="target" class="w-16 h-16 mx-auto mb-6 text-amber-500"></i>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">🎯 まとめ</h2>
                 </div>
 
-                <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 mb-8">
-                    <p class="text-xl mb-6 leading-relaxed">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-8 mb-8 shadow-sm">
+                    <p class="text-xl mb-6 leading-relaxed text-gray-800">
                         この制度改定は、貸切バス業界全体の持続可能な発展と、<br>
                         お客様への安全で質の高いサービス提供を実現するための重要な取り組みです。
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-6">
-                        <i data-lucide="clock" class="w-8 h-8 mx-auto mb-3 text-yellow-400"></i>
-                        <h3 class="font-bold text-lg mb-2">期限内での確実な届出手続き</h3>
-                        <p class="text-sm text-gray-300">令和7年10月24日まで</p>
+                    <div class="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 rounded-lg p-6 shadow-sm">
+                        <i data-lucide="clock" class="w-8 h-8 mx-auto mb-3 text-amber-600"></i>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">期限内での確実な届出手続き</h3>
+                        <p class="text-sm text-gray-600">令和7年10月24日まで</p>
                     </div>
-                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-6">
-                        <i data-lucide="users" class="w-8 h-8 mx-auto mb-3 text-yellow-400"></i>
-                        <h3 class="font-bold text-lg mb-2">お客様への丁寧な説明と理解促進</h3>
-                        <p class="text-sm text-gray-300">信頼関係の維持</p>
+                    <div class="bg-gradient-to-br from-blue-50 to-sky-50 border border-blue-200 rounded-lg p-6 shadow-sm">
+                        <i data-lucide="users" class="w-8 h-8 mx-auto mb-3 text-blue-600"></i>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">お客様への丁寧な説明と理解促進</h3>
+                        <p class="text-sm text-gray-600">信頼関係の維持</p>
                     </div>
-                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-6">
-                        <i data-lucide="trending-up" class="w-8 h-8 mx-auto mb-3 text-yellow-400"></i>
-                        <h3 class="font-bold text-lg mb-2">運転者の処遇改善への積極的な取り組み</h3>
-                        <p class="text-sm text-gray-300">業界全体の発展</p>
+                    <div class="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-lg p-6 shadow-sm">
+                        <i data-lucide="trending-up" class="w-8 h-8 mx-auto mb-3 text-green-600"></i>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">運転者の処遇改善への積極的な取り組み</h3>
+                        <p class="text-sm text-gray-600">業界全体の発展</p>
                     </div>
                 </div>
 
-                <div class="text-xl font-semibold">
+                <div class="text-xl font-semibold text-gray-900">
                     適正な運賃・料金制度の下で、より良い貸切バスサービスの提供を目指しましょう。
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- お問い合わせフォームセクション -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <i data-lucide="mail" class="w-16 h-16 mx-auto mb-6 text-blue-500"></i>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">📧 お問い合わせ</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    新運賃制度についてご不明な点がございましたら、<br>
+                    お気軽にお問い合わせください。
+                </p>
+            </div>
+
+            <!-- お問い合わせフォーム -->
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 border border-gray-200 rounded-xl p-8 shadow-lg" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4 text-center text-gray-900 flex items-center justify-center">
+                        <i data-lucide="message-circle" class="w-6 h-6 text-blue-500 mr-3"></i>
+                        お問い合わせフォーム
+                    </h3>
+                    <p class="text-sm text-gray-600 text-center mb-6">
+                        <span class="text-red-500">*</span> は必須項目、その他は任意項目です
+                    </p>
+
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="space-y-6" id="contact-form">
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                                    会社名・お名前 <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       required
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
+                                       placeholder="例：〇〇運輸株式会社 / 田中太郎">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                    メールアドレス <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       required
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
+                                       placeholder="example@company.co.jp">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                    電話番号
+                                </label>
+                                <input type="tel"
+                                       id="phone"
+                                       name="phone"
+                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
+                                       placeholder="03-1234-5678">
+                            </div>
+                            <div>
+                                <label for="region" class="block text-sm font-medium text-gray-700 mb-2">
+                                    管轄運輸局
+                                </label>
+                                <select id="region"
+                                        name="region"
+                                        class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm">
+                                    <option value="">選択してください</option>
+                                    <option value="関東運輸局">関東運輸局</option>
+                                    <option value="近畿運輸局">近畿運輸局</option>
+                                    <option value="北海道運輸局">北海道運輸局</option>
+                                    <option value="東北運輸局">東北運輸局</option>
+                                    <option value="北陸信越運輸局">北陸信越運輸局</option>
+                                    <option value="中部運輸局">中部運輸局</option>
+                                    <option value="中国運輸局">中国運輸局</option>
+                                    <option value="四国運輸局">四国運輸局</option>
+                                    <option value="九州運輸局">九州運輸局</option>
+                                    <option value="沖縄総合事務局">沖縄総合事務局</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                件名 <span class="text-red-500">*</span>
+                            </label>
+                            <select id="subject"
+                                    name="subject"
+                                    required
+                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm">
+                                <option value="">お問い合わせ内容を選択してください</option>
+                                <option value="新運賃制度について">新運賃制度について</option>
+                                <option value="車種区分変更について">車種区分変更について</option>
+                                <option value="届出手続きについて">届出手続きについて</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                                お問い合わせ内容 <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="message"
+                                      name="message"
+                                      rows="5"
+                                      required
+                                      class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-y shadow-sm"
+                                      placeholder="具体的なご相談内容をお書きください。現在の状況や困っていることなど、詳しくお聞かせください。"></textarea>
+                        </div>
+
+                        <!-- reCAPTCHA -->
+                        <div data-netlify-recaptcha="true" class="flex justify-center"></div>
+
+                        <div class="text-center">
+                            <button type="submit"
+                                    class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-md">
+                                <i data-lucide="send" class="w-5 h-5 inline mr-3"></i>
+                                お問い合わせを送信
+                            </button>
+                        </div>
+                    </form>
+
+                    <p class="text-xs text-gray-600 mt-6 text-center">
+                        <i data-lucide="shield-check" class="w-3 h-3 inline mr-1"></i>
+                        お預かりした個人情報は適切に管理し、お問い合わせの回答以外の目的には使用いたしません。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- 貸切バス専門行政書士事務所セクション -->
     <section class="py-16 bg-gradient-to-br from-slate-800 via-slate-900 to-indigo-900 text-white">
@@ -2255,10 +2391,11 @@
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-start">
-                <!-- 左側：サービス内容 -->
-                <div data-aos="fade-right">
-                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 mb-8">
+            <div class="space-y-8">
+                <!-- サービス内容と実績のグリッド -->
+                <div class="grid lg:grid-cols-2 gap-8" data-aos="fade-up">
+                    <!-- サービス内容 -->
+                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8">
                         <h3 class="text-2xl font-bold mb-6 flex items-center">
                             <i data-lucide="briefcase" class="w-6 h-6 mr-3 text-yellow-400"></i>
                             主なサポート内容
@@ -2289,188 +2426,48 @@
                     </div>
 
                     <!-- 実績 -->
-                    <div class="bg-gradient-to-br from-amber-400 to-yellow-500 bg-opacity-90 border-2 border-amber-300 rounded-xl p-6 shadow-xl">
-                        <div class="flex items-center mb-4">
+                    <div class="bg-gradient-to-br from-amber-400 to-yellow-500 bg-opacity-90 border-2 border-amber-300 rounded-xl p-8 shadow-xl">
+                        <div class="flex items-center mb-6">
                             <i data-lucide="trophy" class="w-7 h-7 text-slate-800 mr-3"></i>
-                            <h4 class="text-xl font-bold text-slate-800">実績</h4>
+                            <h4 class="text-2xl font-bold text-slate-800">実績</h4>
                         </div>
-                        <div class="text-slate-800 font-semibold leading-relaxed">
-                            <div class="flex items-center mb-2">
-                                <span class="text-2xl mr-2">🏆</span>
-                                <span>法令試験合格率<strong class="text-slate-900 text-2xl ml-2">94.7%</strong></span>
-                            </div>
-                            <div class="flex items-center mb-2">
-                                <span class="text-2xl mr-2">📊</span>
-                                <span>20年<strong class="text-slate-900 text-2xl ml-2">200件以上</strong>の許認可申請</span>
+                        <div class="text-slate-800 font-semibold leading-relaxed space-y-4">
+                            <div class="flex items-center">
+                                <span class="text-3xl mr-3">🏆</span>
+                                <span>法令試験合格率<strong class="text-slate-900 text-3xl ml-2">94.7%</strong></span>
                             </div>
                             <div class="flex items-center">
-                                <span class="text-2xl mr-2">✅</span>
-                                <span>許認可率<strong class="text-slate-900 text-2xl ml-2">100%</strong></span>
+                                <span class="text-3xl mr-3">📊</span>
+                                <span>20年<strong class="text-slate-900 text-3xl ml-2">200件以上</strong>の許認可申請</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-3xl mr-3">✅</span>
+                                <span>許認可率<strong class="text-slate-900 text-3xl ml-2">100%</strong></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 右側：メッセージとお問い合わせ -->
-                <div data-aos="fade-left">
-                    <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 mb-8">
-                        <h3 class="text-2xl font-bold mb-6 flex items-center">
-                            <i data-lucide="heart" class="w-6 h-6 mr-3 text-red-400"></i>
-                            私たちの想い
-                        </h3>
+                <!-- メッセージ -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-md rounded-xl p-8 text-center" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center justify-center">
+                        <i data-lucide="heart" class="w-6 h-6 mr-3 text-red-400"></i>
+                        私たちの想い
+                    </h3>
 
-                        <div class="text-blue-100 leading-relaxed mb-6">
-                            <p class="mb-4">
-                                お客様の不安を解消し、スムーズに行政手続きが進むよう支援いたします。
-                            </p>
-                            <p class="mb-4">
-                                面倒な手続きや法令試験についての心配は過去のものとなり、安心して事業に専念していただける環境をご提供いたします。
-                            </p>
-                            <p class="font-semibold text-white">
-                                制度変更への対応、各種申請手続き、運行管理体制の整備など<br>
-                                自動車運送事業に関することなら何でもお気軽にご相談ください。
-                            </p>
-                        </div>
-
-                        <!-- お問い合わせフォーム -->
-                        <div class="space-y-6">
-                            <!-- 専門家へのリンク -->
-                            <a href="https://busguardian.tokyo"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="group block w-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 hover:from-amber-400 hover:via-yellow-400 hover:to-amber-500 text-slate-900 font-bold py-6 px-8 rounded-xl text-center transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border-2 border-amber-400">
-                                <div class="flex items-center justify-center mb-2">
-                                    <img src="assets/images/new_gothic_white_logomark.png"
-                                         alt="BUS GUARDIAN TOKYO ロゴ"
-                                         class="h-12 mr-4 drop-shadow-lg group-hover:drop-shadow-xl transition-all duration-300">
-                                    <div class="text-left">
-                                        <div class="text-lg font-black text-slate-800 mb-1">BUS GUARDIAN TOKYO</div>
-                                        <div class="text-sm font-semibold text-slate-700">貸切バス専門行政書士</div>
-                                    </div>
-                                </div>
-                                <div class="text-sm font-bold text-slate-800 flex items-center justify-center">
-                                    <i data-lucide="external-link" class="w-4 h-4 mr-2"></i>
-                                    ホームページはこちら
-                                </div>
-                            </a>
-
-                            <!-- お問い合わせフォーム -->
-                            <div class="bg-slate-700 bg-opacity-40 border border-slate-500 rounded-lg p-6 backdrop-blur-sm">
-                                <h4 class="text-amber-100 font-semibold text-lg mb-4 flex items-center">
-                                    <i data-lucide="mail" class="w-5 h-5 text-amber-300 mr-2"></i>
-                                    お問い合わせフォーム
-                                </h4>
-
-                                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="space-y-4" id="contact-form">
-                                    <input type="hidden" name="form-name" value="contact" />
-
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div>
-                                            <label for="name" class="block text-sm font-medium text-blue-100 mb-1">
-                                                会社名・お名前 <span class="text-red-400">*</span>
-                                            </label>
-                                            <input type="text"
-                                                   id="name"
-                                                   name="name"
-                                                   required
-                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
-                                                   placeholder="例：〇〇運輸株式会社 / 田中太郎">
-                                        </div>
-                                        <div>
-                                            <label for="email" class="block text-sm font-medium text-blue-100 mb-1">
-                                                メールアドレス <span class="text-red-400">*</span>
-                                            </label>
-                                            <input type="email"
-                                                   id="email"
-                                                   name="email"
-                                                   required
-                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
-                                                   placeholder="example@company.co.jp">
-                                        </div>
-                                    </div>
-
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div>
-                                            <label for="phone" class="block text-sm font-medium text-blue-100 mb-1">
-                                                電話番号
-                                            </label>
-                                            <input type="tel"
-                                                   id="phone"
-                                                   name="phone"
-                                                   class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent"
-                                                   placeholder="03-1234-5678">
-                                        </div>
-                                        <div>
-                                            <label for="region" class="block text-sm font-medium text-blue-100 mb-1">
-                                                管轄運輸局
-                                            </label>
-                                            <select id="region"
-                                                    name="region"
-                                                    class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
-                                                <option value="">選択してください</option>
-                                                <option value="関東運輸局">関東運輸局</option>
-                                                <option value="近畿運輸局">近畿運輸局</option>
-                                                <option value="北海道運輸局">北海道運輸局</option>
-                                                <option value="東北運輸局">東北運輸局</option>
-                                                <option value="北陸信越運輸局">北陸信越運輸局</option>
-                                                <option value="中部運輸局">中部運輸局</option>
-                                                <option value="中国運輸局">中国運輸局</option>
-                                                <option value="四国運輸局">四国運輸局</option>
-                                                <option value="九州運輸局">九州運輸局</option>
-                                                <option value="沖縄総合事務局">沖縄総合事務局</option>
-                                                <option value="その他">その他</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <label for="subject" class="block text-sm font-medium text-blue-100 mb-1">
-                                            件名 <span class="text-red-400">*</span>
-                                        </label>
-                                        <select id="subject"
-                                                name="subject"
-                                                required
-                                                class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent">
-                                            <option value="">お問い合わせ内容を選択してください</option>
-                                            <option value="新運賃制度について">新運賃制度について</option>
-                                            <option value="届出手続きについて">届出手続きについて</option>
-                                            <option value="車種区分変更について">車種区分変更について</option>
-                                            <option value="運転者処遇改善について">運転者処遇改善について</option>
-                                            <option value="運行管理体制について">運行管理体制について</option>
-                                            <option value="許可申請について">許可申請について</option>
-                                            <option value="その他">その他</option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <label for="message" class="block text-sm font-medium text-blue-100 mb-1">
-                                            お問い合わせ内容 <span class="text-red-400">*</span>
-                                        </label>
-                                        <textarea id="message"
-                                                  name="message"
-                                                  rows="4"
-                                                  required
-                                                  class="w-full px-3 py-2 bg-white bg-opacity-10 border border-slate-400 rounded-md text-white placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent resize-y"
-                                                  placeholder="具体的なご相談内容をお書きください。現在の状況や困っていることなど、詳しくお聞かせください。"></textarea>
-                                    </div>
-
-                                    <!-- reCAPTCHA -->
-                                    <div data-netlify-recaptcha="true"></div>
-
-                                    <button type="submit"
-                                            class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-900 font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed">
-                                        <i data-lucide="send" class="w-4 h-4 inline mr-2"></i>
-                                        お問い合わせを送信
-                                    </button>
-                                </form>
-
-                                <p class="text-xs text-slate-300 mt-4">
-                                    <i data-lucide="shield-check" class="w-3 h-3 inline mr-1"></i>
-                                    お預かりした個人情報は適切に管理し、お問い合わせの回答以外の目的には使用いたしません。
-                                </p>
-                            </div>
-                        </div>
+                    <div class="text-blue-100 leading-relaxed max-w-4xl mx-auto">
+                        <p class="mb-4">
+                            お客様の不安を解消し、スムーズに行政手続きが進むよう支援いたします。
+                        </p>
+                        <p class="mb-4">
+                            面倒な手続きや法令試験についての心配は過去のものとなり、安心して事業に専念していただける環境をご提供いたします。
+                        </p>
+                        <p class="font-semibold text-white text-lg">
+                            制度変更への対応、各種申請手続き、運行管理体制の整備など<br>
+                            自動車運送事業に関することなら何でもお気軽にご相談ください。
+                        </p>
                     </div>
+                </div>
 
                 </div>
             </div>
