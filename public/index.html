@@ -2251,136 +2251,28 @@
         </section>
     </main>
 
-    <!-- お問い合わせフォームセクション -->
+    <!-- お問い合わせセクション -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12" data-aos="fade-up">
+            <div class="text-center" data-aos="fade-up">
                 <i data-lucide="mail" class="w-16 h-16 mx-auto mb-6 text-blue-500"></i>
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">📧 お問い合わせ</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
                     新運賃制度についてご不明な点がございましたら、<br>
                     お気軽にお問い合わせください。
                 </p>
+
+                <!-- お問い合わせフォームへのリンクボタン -->
+                <a href="https://contact-transportlegaladmin.netlify.app/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg shadow-md">
+                    <i data-lucide="message-circle" class="w-5 h-5 mr-3"></i>
+                    お問い合わせフォームへ
+                    <i data-lucide="external-link" class="w-5 h-5 ml-3"></i>
+                </a>
             </div>
-
-            <!-- お問い合わせフォーム -->
-                <div class="bg-gradient-to-br from-gray-50 to-blue-50 border border-gray-200 rounded-xl p-8 shadow-lg" data-aos="fade-up">
-                    <h3 class="text-2xl font-bold mb-4 text-center text-gray-900 flex items-center justify-center">
-                        <i data-lucide="message-circle" class="w-6 h-6 text-blue-500 mr-3"></i>
-                        お問い合わせフォーム
-                    </h3>
-                    <p class="text-sm text-gray-600 text-center mb-6">
-                        <span class="text-red-500">*</span> は必須項目、その他は任意項目です
-                    </p>
-
-                    <form name="contact" method="POST" data-netlify="true" class="space-y-6" id="contact-form">
-                        <input type="hidden" name="form-name" value="contact" />
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
-                                    会社名・お名前 <span class="text-red-500">*</span>
-                                </label>
-                                <input type="text"
-                                       id="name"
-                                       name="name"
-                                       required
-                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
-                                       placeholder="例：〇〇運輸株式会社 / 田中太郎">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-                                    メールアドレス <span class="text-red-500">*</span>
-                                </label>
-                                <input type="email"
-                                       id="email"
-                                       name="email"
-                                       required
-                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
-                                       placeholder="example@company.co.jp">
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
-                                    電話番号
-                                </label>
-                                <input type="tel"
-                                       id="phone"
-                                       name="phone"
-                                       class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm"
-                                       placeholder="03-1234-5678">
-                            </div>
-                            <div>
-                                <label for="region" class="block text-sm font-medium text-gray-700 mb-2">
-                                    管轄運輸局
-                                </label>
-                                <select id="region"
-                                        name="region"
-                                        class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm">
-                                    <option value="">選択してください</option>
-                                    <option value="関東運輸局">関東運輸局</option>
-                                    <option value="近畿運輸局">近畿運輸局</option>
-                                    <option value="北海道運輸局">北海道運輸局</option>
-                                    <option value="東北運輸局">東北運輸局</option>
-                                    <option value="北陸信越運輸局">北陸信越運輸局</option>
-                                    <option value="中部運輸局">中部運輸局</option>
-                                    <option value="中国運輸局">中国運輸局</option>
-                                    <option value="四国運輸局">四国運輸局</option>
-                                    <option value="九州運輸局">九州運輸局</option>
-                                    <option value="沖縄総合事務局">沖縄総合事務局</option>
-                                    <option value="その他">その他</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
-                                件名 <span class="text-red-500">*</span>
-                            </label>
-                            <select id="subject"
-                                    name="subject"
-                                    required
-                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm">
-                                <option value="">お問い合わせ内容を選択してください</option>
-                                <option value="新運賃制度について">新運賃制度について</option>
-                                <option value="車種区分変更について">車種区分変更について</option>
-                                <option value="届出手続きについて">届出手続きについて</option>
-                                <option value="その他">その他</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
-                                お問い合わせ内容 <span class="text-red-500">*</span>
-                            </label>
-                            <textarea id="message"
-                                      name="message"
-                                      rows="5"
-                                      required
-                                      class="w-full px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-y shadow-sm"
-                                      placeholder="具体的なご相談内容をお書きください。現在の状況や困っていることなど、詳しくお聞かせください。"></textarea>
-                        </div>
-
-                        <!-- reCAPTCHA は一時的に無効化 -->
-                        <!-- <div data-netlify-recaptcha="true" class="flex justify-center"></div> -->
-
-                        <div class="text-center">
-                            <button type="submit"
-                                    class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-4 px-12 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-md">
-                                <i data-lucide="send" class="w-5 h-5 inline mr-3"></i>
-                                お問い合わせを送信
-                            </button>
-                        </div>
-                    </form>
-
-                    <p class="text-xs text-gray-600 mt-6 text-center">
-                        <i data-lucide="shield-check" class="w-3 h-3 inline mr-1"></i>
-                        お預かりした個人情報は適切に管理し、お問い合わせの回答以外の目的には使用いたしません。
-                    </p>
-                </div>
-            </div>
+        </div>
     </section>
 
     <!-- 貸切バス専門行政書士事務所セクション -->
@@ -2683,183 +2575,6 @@
             // FAQ を元の状態に戻す
             document.querySelectorAll('.faq-content').forEach(content => {
                 content.classList.add('hidden');
-            });
-        });
-
-        // お問い合わせフォームの機能
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contact-form');
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const nameInput = document.getElementById('name');
-            const emailInput = document.getElementById('email');
-            const phoneInput = document.getElementById('phone');
-            const messageInput = document.getElementById('message');
-
-            // リアルタイムバリデーション
-            function validateEmail(email) {
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return emailRegex.test(email);
-            }
-
-            function validatePhone(phone) {
-                if (!phone) return true; // 任意項目なのでemptyはOK
-                const phoneRegex = /^[\d\-\(\)\+\s]+$/;
-                return phoneRegex.test(phone);
-            }
-
-            function showError(input, message) {
-                // 既存のエラーメッセージを削除
-                const existingError = input.parentNode.querySelector('.error-message');
-                if (existingError) {
-                    existingError.remove();
-                }
-
-                // エラースタイル適用
-                input.classList.add('border-red-400', 'focus:ring-red-400');
-                input.classList.remove('border-slate-400', 'focus:ring-amber-400');
-
-                // エラーメッセージ表示
-                if (message) {
-                    const errorDiv = document.createElement('div');
-                    errorDiv.className = 'error-message text-red-400 text-xs mt-1';
-                    errorDiv.textContent = message;
-                    input.parentNode.appendChild(errorDiv);
-                }
-            }
-
-            function clearError(input) {
-                // エラーメッセージを削除
-                const existingError = input.parentNode.querySelector('.error-message');
-                if (existingError) {
-                    existingError.remove();
-                }
-
-                // 通常のスタイルに戻す
-                input.classList.remove('border-red-400', 'focus:ring-red-400');
-                input.classList.add('border-slate-400', 'focus:ring-amber-400');
-            }
-
-            // メールアドレスのバリデーション
-            emailInput.addEventListener('blur', function() {
-                if (this.value && !validateEmail(this.value)) {
-                    showError(this, '正しいメールアドレスを入力してください');
-                } else {
-                    clearError(this);
-                }
-            });
-
-            // 電話番号のバリデーション
-            phoneInput.addEventListener('blur', function() {
-                if (this.value && !validatePhone(this.value)) {
-                    showError(this, '正しい電話番号を入力してください（数字、ハイフン、括弧、プラス記号、スペースのみ）');
-                } else {
-                    clearError(this);
-                }
-            });
-
-            // 文字数カウンター（メッセージ）
-            function updateMessageCounter() {
-                const maxLength = 1000;
-                const currentLength = messageInput.value.length;
-
-                let counter = messageInput.parentNode.querySelector('.char-counter');
-                if (!counter) {
-                    counter = document.createElement('div');
-                    counter.className = 'char-counter text-xs text-slate-400 mt-1 text-right';
-                    messageInput.parentNode.appendChild(counter);
-                }
-
-                counter.textContent = `${currentLength}/${maxLength}文字`;
-
-                if (currentLength > maxLength * 0.9) {
-                    counter.classList.add('text-amber-400');
-                    counter.classList.remove('text-slate-400');
-                } else {
-                    counter.classList.add('text-slate-400');
-                    counter.classList.remove('text-amber-400');
-                }
-
-                if (currentLength > maxLength) {
-                    counter.classList.add('text-red-400');
-                    counter.classList.remove('text-amber-400', 'text-slate-400');
-                }
-            }
-
-            messageInput.setAttribute('maxlength', '1000');
-            messageInput.addEventListener('input', updateMessageCounter);
-            updateMessageCounter(); // 初期表示
-
-            // フォーム送信時の処理
-            contactForm.addEventListener('submit', function(e) {
-                let hasError = false;
-
-                // 必須項目チェック
-                if (!nameInput.value.trim()) {
-                    showError(nameInput, 'お名前または会社名は必須です');
-                    hasError = true;
-                } else {
-                    clearError(nameInput);
-                }
-
-                if (!emailInput.value.trim()) {
-                    showError(emailInput, 'メールアドレスは必須です');
-                    hasError = true;
-                } else if (!validateEmail(emailInput.value)) {
-                    showError(emailInput, '正しいメールアドレスを入力してください');
-                    hasError = true;
-                } else {
-                    clearError(emailInput);
-                }
-
-                if (!messageInput.value.trim()) {
-                    showError(messageInput, 'お問い合わせ内容は必須です');
-                    hasError = true;
-                } else {
-                    clearError(messageInput);
-                }
-
-                // 電話番号チェック（任意だが、入力されている場合はバリデーション）
-                if (phoneInput.value && !validatePhone(phoneInput.value)) {
-                    showError(phoneInput, '正しい電話番号を入力してください');
-                    hasError = true;
-                } else {
-                    clearError(phoneInput);
-                }
-
-                // エラーがある場合は送信を阻止
-                if (hasError) {
-                    e.preventDefault();
-
-                    // 最初のエラー項目にスクロール
-                    const firstError = contactForm.querySelector('.border-red-400');
-                    if (firstError) {
-                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                        firstError.focus();
-                    }
-                    return;
-                }
-
-                // エラーがない場合は、送信中UIを表示（但し、フォームは通常通り送信される）
-                submitButton.disabled = true;
-                submitButton.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 inline mr-2 animate-spin"></i>送信中...';
-
-                // アイコンを再初期化
-                if (typeof lucide !== 'undefined') {
-                    lucide.createIcons();
-                }
-
-                // Netlifyフォームの場合、フォームは通常のHTTP POSTで送信される
-                // preventDefault()を呼んでいないので、ここで通常のフォーム送信が継続される
-            });
-
-            // 送信完了後の処理（Netlifyフォームの場合、成功ページにリダイレクトされるため通常は不要）
-            // ただし、AJAX送信を使用する場合は以下のような処理を追加できます
-
-            // フォームのアクセシビリティ改善
-            contactForm.querySelectorAll('input, select, textarea').forEach(field => {
-                field.addEventListener('focus', function() {
-                    clearError(this);
-                });
             });
         });
 
